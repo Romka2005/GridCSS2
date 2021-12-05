@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-gap:20px;
+    grid-template-areas: 
+                        'nav1 sidebar sidebar sidebar sidebar sidebar sidebar'
+                        'nav1 column1 column2 column3 column4 column5 column6'
+                        'nav2 column1 column2 column3 column4 column5 column6'
+                        'nav2 column1 column2 column3 column4 column5 column6'
+                        'nav2 row1 row1 row2 row3 row4 row5 '
+                        'nav2 svg1 svg1 content1 content1 content1 content1'
+                        'nav3 svg2 svg2 content2 content2 content2 content2';
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+    font-family: 'Readex Pro', sans-serif;
+}
+.container div{
+    border-radius: 20px;
+}
+.container li, a{
+    list-style: none;
+    text-decoration: none;
+}
+.nav1{
+    grid-area: nav1;
+}
+.nav1 img{
+    height: auto;
+    max-width: 200px;
+}
+
+/*!!!!!! nav2 !!!!!!*/
+
+.nav2{
+    grid-area: nav2;
+    background: rgb(49, 47, 47);
+}
+.nav2 li{
+    padding: 30px;
+}
+.nav2 a{
+    color: white;
+    transition: all .5s; 
+}
+.nav2 ul li a{
+    display: block;
+    position: relative;
+}
+.nav2 ul:hover li a{
+    transform: scale(1);
+    opacity: .2;
+    filter: blur(3px);
+}
+.nav2 ul li a:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(0);
+}
+.nav3{
+    grid-area: nav3;
+}
+.nav3 div{
+    margin-top: 25px;
+}
+.button a{
+    color: white;
+    background: rgb(27, 27, 27);
+    font-size: 30px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.button a:hover{
+    background: rgb(235, 229, 229);
+    color: black;
+    font-size: 35px;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.column1{
+    grid-area: column1;
+}
+.mebel img{
+    width: 260px;
+}
+.mebel .img{
+    margin: auto;
+}
+.mebel{
+    background: rgb(231, 228, 228);
+    -webkit-box-shadow: 9px 12px 16px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 9px 12px 16px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 9px 12px 16px 0px rgba(34, 60, 80, 0.2);
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    transition: .5s;
+}
+.mebel:hover{
+    background: black;
+    color: white;
+}
+.mebel .button{
+    margin: 20px 0px;
+    height: 40px;
+}
+.column2{
+    grid-area: column2;
+}
+.column3{
+    grid-area: column3;
+}
+.column4{
+    grid-area: column4;
+}
+.column5{
+    grid-area: column5;
+}
+.column6{
+    grid-area: column6;
+}
+.row1{
+    grid-area: row1;
+    background: black;
+    text-align: left;
+    padding: 20px;
+}
+.row1 a{
+    color: white;
+    transition: .5s;
+}
+.row1 li{
+    margin: 10px;
+}
+.row1 a:hover{
+    padding-left: 50px;
+}
+.view{
+    font-size: 20px;
+    background: black;
+}
+.view .img{
+    background: url(./img/view.jpg)center no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    color: black;
+}
+.view a{
+    color: white;
+    font-size: 20px;
+    transition: all .5s;
+}
+.view a:hover{
+    font-size: 40px;
+}
+.row2{
+    grid-area: row2;
+}
+.row3 .img{
+    grid-area: row3;
+    background: url(./img/view2.jpg)center no-repeat;
+    background-size: cover;
+}
+.row4 .img{
+    grid-area: row4;
+    background: url(./img/view3.jpg)center no-repeat;
+    background-size: cover;
+}
+.row5 .img{
+    grid-area: row5;
+    background: url(./img/view4.jpg)center no-repeat;
+    background-size: cover;
+}
+.svg1{
+    grid-area: svg1;
+}
+.head{
+    background: rgb(175, 164, 164);
+}
+.head img{
+    width: 200px;
+}
+.content{
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+    color: white;
+    background: rgb(46, 44, 44);
+}
+.svg2{
+    grid-area: svg2;
+}
+.content1{
+    grid-area: content1;
+}
+.content2{
+    grid-area: content2;
+}
